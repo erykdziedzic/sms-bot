@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".js", ".ios.js", ".android.js", ".jsx"],
+        "alias": {
+          "@duck": "./src/duck",
+          "@components": "./src/components",
+          "@res": "./src/res",
+          "@lib": "./src/lib",
+          "@navigation": "./src/navigation",
+          "@screens": "./src/screens",
+          "@styles": "./src/styles"
+        }
+      }
+    ]
+  ]
+}
