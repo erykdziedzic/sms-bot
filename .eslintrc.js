@@ -1,10 +1,17 @@
 module.exports = {
+  root: true,
   env: {
     es6: true,
     jest: true,
     'react-native/react-native': true,
   },
-  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:import/errors'],
+  extends: [
+    'standard',
+    'prettier',
+    'prettier/react',
+    'plugin:import/errors',
+    '@react-native-community',
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -14,7 +21,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   plugins: ['react', 'react-native', 'prettier', 'module-resolver'],
